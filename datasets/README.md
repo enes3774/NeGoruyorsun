@@ -8,8 +8,8 @@ Veriseti, https://arxiv.org/abs/2103.01913 makalesindeki toplanan veriler işlen
 - Bazı wikipedia sayfalarında fotoğrafların tanımları olmayabiliyor.(%50'sinde yok)
  <table>
   <tr>
-    <td><img src="images/image_with_alttext.png" width="300"></td>
-    <td><img src="images/image_without_alttext.png" width="300"></td>
+    <td><img src="../images/image_with_alttext.png" width="300"></td>
+    <td><img src="../images/image_without_alttext.png" width="300"></td>
   </tr>
   <tr>
     <td>Altında tanımı olan Wikipedia resmi </td>
