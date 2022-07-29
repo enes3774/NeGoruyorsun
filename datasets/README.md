@@ -21,4 +21,5 @@ Veriseti, https://arxiv.org/abs/2103.01913 makalesindeki toplanan veriler işlen
 - Bazı url'lerdeki fotoğraflar silinmişti. Silinen fotoğraflar tespit edilip çıkartıldı.
 
 Şuanki verisetinde "url" ve "captions" olmak üzere iki sütun bulunuyor.
+Verisetini [drive linkinden](https://drive.google.com/file/d/1NA1w-nA1wsoOoTncgifxF0CqttxygdBL/view?usp=sharing) indirebilirsiniz.
 
