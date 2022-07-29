@@ -20,7 +20,7 @@ Verisetini dataset klasörü içinde bulabilirsiniz.
 OpenAI'ın yayınlamış olduğu CLIP modeli, bir resim ile bir metnin ne kadar benzer olduğunu bize verebiliyor. Bunu yaparkenki kullandığı yöntem ise metinleri ve resimleri aynı boyuta getirmek. Model içinde text encoder ve image encoder olmak üzere 2 farklı model barındırıyor. 
 | ![CLIP](https://raw.githubusercontent.com/mlfoundations/open_clip/main/docs/CLIP.png) |
 |:--:|
-| Image Credit: https://github.com/openai/CLIP |
+| Resim: https://github.com/openai/CLIP |
 
 Bu modeller sayesinde resim ve metinler 512 uzunluğunda bir vektöre dönüşüyor. Eğer resim ve metin benziyorsa vektörleri de benziyor. Yani "bu bir köpek" metninin vektörü ile köpek fotoğrafının vektörü benzer olacaktır.
 
