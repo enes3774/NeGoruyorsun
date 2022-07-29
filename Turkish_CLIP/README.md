@@ -1,7 +1,7 @@
 ## Türkçe Verilerle Eğitilen CLIP Modeli
 | ![CLIP](https://raw.githubusercontent.com/mlfoundations/open_clip/main/docs/CLIP.png) |
 |:--:|
-| Image Credit: https://github.com/openai/CLIP |
+| Resim: https://github.com/openai/CLIP |
 
 CLIP modelinin kullandığı text encoder modeli İngilizce metin alıp embedding yapıyor.
 Bu projenin amacı gerçek CLIP modelindeki text encoder kısmını Türkçe verilerle eğiteceğim bir text encoder ile değiştirmek. Bu sayede model Türkçe verileri anlayabilir hale gelecek.
