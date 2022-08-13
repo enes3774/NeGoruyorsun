@@ -10,3 +10,17 @@ Arttırılan bu vektör text decoder modeline verilir. Bu model ise adlığı ve
 
 Projeyi yaparken daha önceden Türkçe verilerle eğitiliş  gt2 modeli kullanıldı. Bunun nedeni modelin daha hızlı Türkçe metinlere uyum sağlaması. İmage encoder olarak da OpenAI'ın yayınlamış olduğu CLIP image encoder modeli kullanıldı.
 Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğraf üzerinde eğitilmesi. Bu sayede model daha hızlı optimize edilebildi.
+
+# Model Sonuçları
+ <table>
+  <tr>
+    <td><img src="../main/images/test1.jpg" width="300"></td>
+    <td><img src="../main/images/test3.jpg" width="300"></td>
+    <td><img src="../main/images/test5.png" width="300"></td>
+  </tr>
+  <tr>
+    <td>Bir kız doğum günü pastasında mumları üfler.</td>
+     <td> Sörf yapan bir adam.</td>
+    <td>Bir grup otobüs, bir otoparkta park edildi.</td>
+  </tr>
+ </table>
