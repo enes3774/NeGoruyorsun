@@ -1,5 +1,5 @@
 from transformers import AutoModel, AutoTokenizer,AutoModelWithLMHead
-
+from typing import Tuple, Optional, Union
 class ClipCaptionModel(nn.Module):
 
     def get_dummy_token(self, batch_size: int, device: torch.device) -> torch.Tensor:
