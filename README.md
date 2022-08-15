@@ -15,8 +15,9 @@ Proje iki kısımdan oluşuyor, image encoder ve text decoder. İmage encoder, v
 Bu vektör içinde resimdeki önemli detayları(eşyalar,onların renkleri vs.) barındırır. Oluşturulan bu vektör başka küçük bir model sayesinde text decoder'a verilmek için boyutu arttırılır.
 Arttırılan bu vektör text decoder modeline verilir. Bu model ise aldığı vektöre bakarak yeni bir metin oluşturur. Oluşturulan bu metin, modelin resimde gördükleri olur.
 
-<img src="../main/images/model_sema.jpg">
-"modelin görseli"
+| ![CLIP](../main/images/model_sema.jpg) |
+|:--:|
+| İmage Captioning Modeli |
 
 Projeyi yaparken daha önceden Türkçe verilerle eğitiliş  GPT-2 modeli kullanıldı. Bunun nedeni modelin daha hızlı Türkçe metinlere uyum sağlamasıydı. İmage encoder olarak da OpenAI'ın yayınlamış olduğu CLIP İmage Encoder modeli kullanıldı.
 Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğraf üzerinde eğitilmesi. Bu sayede model daha hızlı optimize edilebildi.
