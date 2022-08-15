@@ -43,7 +43,7 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
  Modeli eğitmek için kullanacağınız resimleri proje dosyasında "images/" klasorünün içine atın. İçinde image dosya adları ve onların Türkçe metinleri olan json formatında bir dosyayı "dataset.json" olarak proje dosyasına koyun."buraya bir klsor şeması koy"
  Resimleri ve dataset dosyasını koyduysak modeli eğitebiliriz.
  ```
-  python train.py
+  python İmageCaptioning/train.py
  ```
  Train dosyasındaki hiperparametreleri(epoch sayısı, batch_size, learning rate vb.) düzenleyip modeldeki sonuçları gözlemleyebilirsiniz. Modeli Tasvir Et ve Turkish MSCOCO verisetleriyle 1 epoch eğitmeniz bile yeterli olacaktır.
  
@@ -51,6 +51,6 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
  Eğittiğiniz modeli proje içinde "models/" klasorune "model.pth" şeklinde koymanız gerekiyor. Hazır bir model checkpoint paylaşmayacağım bunun nedeni modeli çok hızlı şekilde(yaklaşık 2-3 saate çalışan bir model elde edebiliyorsunuz.) eğitebiliyor olmanız.
  Modeli belirtlien dosyaya koyduktan sonra test kodunu çalıştırın. 
   ```
-  python test.py
+  python İmageCaptioning/test.py
  ```
 Test kodundaki resmi değiştirip farklı resimler için modeli test edebilirisiniz.
