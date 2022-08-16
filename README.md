@@ -41,7 +41,7 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
  ```
   pip install git+https://github.com/openai/CLIP.git
  ```
- Modeli eğitmek için kullanacağınız resimleri proje dosyasında "images/" klasorünün içine atın. İçinde image dosya adları ve onların Türkçe metinleri olan json formatında bir dosyayı "dataset.json" olarak proje dosyasına koyun.
+ Modeli eğitmek için kullanacağınız resimleri proje dosyasında "images_data/" klasorünün içine atın. İçinde image dosya adları ve onların Türkçe metinleri olan json formatında bir dosyayı "dataset.json" olarak proje dosyasına koyun.
 Dosya klasoru bu şekilde olmalı: 
 
     .
@@ -62,7 +62,7 @@ Dosya klasoru bu şekilde olmalı:
  Train dosyasındaki hiperparametreleri(epoch sayısı, batch_size, learning rate vb.) düzenleyip modeldeki sonuçları gözlemleyebilirsiniz. Modeli Tasvir Et ve Turkish MSCOCO verisetleriyle 1 epoch eğitmeniz bile yeterli olacaktır.
  
  # Test Aşaması
- Eğittiğiniz modeli proje içinde "models/" klasorune "model.pth" şeklinde koymanız gerekiyor. Hazır bir model checkpoint paylaşmayacağım bunun nedeni modeli çok hızlı şekilde(yaklaşık 2-3 saate çalışan bir model elde edebiliyorsunuz.) eğitebiliyor olmanız.
+ Eğittiğiniz modeli ImageCaptioning dosyası içinde "checkpoints/" klasorune "model_latest.pth" şeklinde koymanız gerekiyor(Modeli eğitirken her 6000 adımda bir ve epoch sonunda kaydediliyor. Train ederken model doğru yere kaydedilecektir.). Hazır bir model checkpoint paylaşmayacağım bunun nedeni modeli çok hızlı şekilde(yaklaşık 2-3 saate çalışan bir model elde edebiliyorsunuz.) eğitebiliyor olmanız.
  Modeli belirtlien dosyaya koyduktan sonra test kodunu çalıştırın. 
   ```
   python ImageCaptioning/test.py
