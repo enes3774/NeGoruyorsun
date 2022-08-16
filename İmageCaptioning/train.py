@@ -1,6 +1,6 @@
 
 import time
-from models import ClipCaptionModel
+from model import ClipCaptionModel
 from dataset import dataset
 import clip
 from PIL import Image
