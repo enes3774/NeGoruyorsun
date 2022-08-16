@@ -26,7 +26,7 @@ Verisetini [drive linkinden](https://drive.google.com/file/d/1NA1w-nA1wsoOoTncgi
 ##  Diğer Kulanılabilir Verisetleri
 Resim-Türkçe Metin şeklinde olan verisetleri mevcut. Bunlar Tasvir Et, Turkish MSCOCO ve Flickr30k. 
 
-Tasvir Et veriseti 2016 yılında Hacettepe Üniversite'sinin yayınladığı bir [makalesinde](https://semihyagcioglu.com/projects/tasviret/) sunuldu. Bu verisetinde Flick8k verisetindeki fotoğrafların insanlar tarafından Türkçe tasvirleri yapıldı. Bu verisetindeki her bir fotoğrafa 2 tane tanım cümlesi oluşturuldu. Verisetinde yaklaış 8 bin fotoğraf ve 16 bin Türkçe metin var. Bu veriseti tamamen insanlar tarafından oluşturulduğundan cümleler anlamlı ve resimle tamamen örtüşüyor.
+Tasvir Et veriseti 2016 yılında Hacettepe Üniversite'sinin yayınladığı bir [makalesinde](https://semihyagcioglu.com/projects/tasviret/) sunuldu. Bu verisetinde Flick8k verisetindeki fotoğrafların insanlar tarafından Türkçe tasvirleri yapıldı. Bu verisetindeki her bir fotoğrafa 2 tane tanım cümlesi oluşturuldu. Verisetinde yaklaşık 8 bin fotoğraf ve 16 bin Türkçe metin var. Bu veriseti tamamen insanlar tarafından oluşturulduğundan cümleler anlamlı ve resimle tamamen örtüşüyor.
 
 Turkish MSCOCO  veriseti 2017 yılında ["Çeviri Veriyle Image Captioning Modeli Oluşturulabilir mi?"](https://ieeexplore.ieee.org/abstract/document/7960638) makalesinde sunuldu. MSCOCO yaklaşık 84 bin fotoğraf içeriyor ve her bir fotoğraf için 5 tane İngilizce tanım cümlesi olan bir veriseti var. Turkish MSCOCO ise bu hazır İngilizce verisetini translate API kullanarak çevirdi. Bu da yaklaşık 420 bin çeviri Türkçe cümle demek. Her ne kadar veriler çeviri olsa da modelin bu verilerle iyi sonuçlar verdiğini gördüm. Bu veriyi makalenin [github sayfasında](https://github.com/giddyyupp/turkish-image-captioning) bulabilirsiniz.
 
@@ -34,4 +34,4 @@ Flickr 30k yine ["Çeviri Veriyle Image Captioning Modeli Oluşturulabilir mi?"]
 
 Bu verisetlerini kullanabilmek için resimleri indirmiş olmanız gerekiyor. MSCOCO veriseti Kaggle'da var [link](https://www.kaggle.com/datasets/aftaab/mscoco). Aynı şekilde Flickr30k veriseti de Kaggle da var [link](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)). Tasvir Et verisetini kullanmak için de bu veriyi indirebilirsiniz.
 
-Modeli kullanmak için içinde fotğraf urlleri ve metinler olan json dosyasını belirtilen klasore(ImageCaptioning/dataset.py kısmından değiştirebilirsiniz) koymak gerekir. Resimleri de images klasoru içinde toplamanız gerekiyor.
+Modeli kullanmak için içinde fotoğraf urlleri ve metinler olan json dosyasını belirtilen klasore (ImageCaptioning/dataset.py kısmından değiştirebilirsiniz) koymak gerekir. Resimleri de images klasoru içinde toplamanız gerekiyor.
