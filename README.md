@@ -48,7 +48,7 @@ Dosya klasoru bu şekilde olmalı:
     ├── images                  # Github için kullanılan resimler burada 
     ├── datasets                # verisetleri ve kullanımı hakkında 
     ├── ImageCaptioning         # Projenin modeli bu dosyada bulunuyor
-    ├── images                  #içerisinde kullandığın verisetinin fotoğrafları olmalı
+    ├── images_data                  #içerisinde kullandığın verisetinin fotoğrafları olmalı
     ├── .gitignore            
     ├── captins.json             #images içindeki resimlerin dosya adları ve o resme karşılık gelen metinleri barındırıyor 
     ├── LICENSE
