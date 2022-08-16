@@ -17,7 +17,7 @@ class dataset(Dataset):
         """
         self.max_seq_len=max_len
         
-        dataset=json.load(open("../input/flickrturkishdataset/tasviret8k_captions.json"))#içinde resim dosyalarını ve metinleri bulundurmalı
+        dataset=json.load(open("../../dataset.json"))#içinde resim dosyalarını ve metinleri bulundurmalı
         dataset=dataset["images"]
         self.captions=[]
         self.image_names=[]
