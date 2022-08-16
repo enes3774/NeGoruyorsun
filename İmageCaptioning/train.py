@@ -1,10 +1,11 @@
-
+from transformers import AutoModel, AutoTokenizer,AutoModelWithLMHead
 import time
 from model import ClipCaptionModel
 from dataset import dataset
 import clip
 from PIL import Image
 from utils import AvgMeter,get_lr
+import torch
 import os
 clip_model_name="ViT-B/32"
 text_tokenizer = "redrussianarmy/gpt2-turkish-cased"
