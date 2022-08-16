@@ -19,7 +19,7 @@ Arttırılan bu vektör text decoder modeline verilir. Bu model ise aldığı ve
 |:--:|
 | İmage Captioning Modeli |
 
-Projeyi yaparken daha önceden Türkçe verilerle eğitiliş  GPT-2 modeli kullanıldı. Bunun nedeni modelin daha hızlı Türkçe metinlere uyum sağlamasıydı. İmage encoder olarak da OpenAI'ın yayınlamış olduğu CLIP İmage Encoder modeli kullanıldı.
+Projeyi yaparken daha önceden Türkçe verilerle eğitilmiş  GPT-2 modeli kullanıldı. Bunun nedeni modelin daha hızlı Türkçe metinlere uyum sağlamasıydı. İmage encoder olarak da OpenAI'ın yayınlamış olduğu CLIP Image Encoder modeli kullanıldı.
 Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğraf üzerinde eğitilmesi. Bu sayede model daha hızlı optimize edilebildi.
 
 # Model Sonuçları
@@ -53,6 +53,7 @@ Dosya klasoru bu şekilde olmalı:
     ├── dataset.json             #images içindeki resimlerin dosya adları ve o resme karşılık gelen metinleri barındırıyor 
     ├── LICENSE
     └── README.md
+ Kullandığınız dataset flickr ise train.py kodunda 4. satırı okuyun. 
  Resimleri ve dataset dosyasını koyduysak modeli eğitebiliriz.
  
  
