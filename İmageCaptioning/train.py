@@ -1,4 +1,4 @@
-from transformers import AutoModel, AutoTokenizer,AutoModelWithLMHead
+from transformers import AutoModel, AutoTokenizer,AutoModelWithLMHead, AdamW,get_linear_schedule_with_warmup
 import time
 from model import ClipCaptionModel
 from coco_dataset import dataset ## eğer datasetin coco se böyle kalsın flickr ise 
@@ -6,8 +6,10 @@ from coco_dataset import dataset ## eğer datasetin coco se böyle kalsın flick
 import clip
 from PIL import Image
 from utils import AvgMeter,get_lr
+import sys
 import torch
 import os
+from torch.utils.data import  DataLoader
 clip_model_name="ViT-B/32"
 text_tokenizer = "redrussianarmy/gpt2-turkish-cased"
 device= torch.device("cuda" if torch.cuda.is_available() else "cpu")
