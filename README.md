@@ -49,7 +49,7 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
   </tr>
  </table>
  
- # Modeli Eğitmek
+ # Modeli Eğitmek 
  Modeli eğitmek için öncelikle requirements.txt dosyasındaki kütüphanelerin kurulmuş olması gerekir. Bir de CLIP modelini yüklemeniz gerekiyor. 
  ```
   pip install git+https://github.com/openai/CLIP.git
@@ -82,3 +82,6 @@ Dosya klasoru bu şekilde olmalı:
   python ImageCaptioning/test.py
  ```
 Test kodundaki resmi değiştirip farklı resimler için modeli test edebilirisiniz.
+## 📓 Kaggle
+
+* Modeli [Kaggle](https://www.kaggle.com/code/eneskulak/ne-goruyorsun) ortamında yaklaşık 2 saatte eğitebilirsiniz. İçerisinde eğittiğiniz modeli kullanmak için beam_search ve greedy olmak üzere 2 algoritma bulunuyor.
