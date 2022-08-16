@@ -35,6 +35,18 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
     <td>Bir grup otobüs, bir otoparkta park edildi.</td>
   </tr>
  </table>
+ <table>
+  <tr>
+    <td><img src="../main/images/test2.png" width="300"></td>
+    <td><img src="../main/images/test4.jpg" width="300"></td>
+    <td><img src="../main/images/test6.jpg" width="300"></td>
+  </tr>
+  <tr>
+    <td>Bir köpek bir yöne bakıyor.</td>
+     <td> Elmanın yakın plan görüntüsü.</td>
+    <td>Çimlerin altında duran bir yavru kedi.</td>
+  </tr>
+ </table>
  
  # Modeli Eğitmek
  Modeli eğitmek için öncelikle requirements.txt dosyasındaki kütüphanelerin kurulmuş olması gerekir. Bir de CLIP modelini yüklemeniz gerekiyor. 
