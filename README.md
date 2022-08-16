@@ -50,7 +50,7 @@ Dosya klasoru bu şekilde olmalı:
     ├── ImageCaptioning         # Projenin modeli bu dosyada bulunuyor
     ├── images_data                  #içerisinde kullandığın verisetinin fotoğrafları olmalı
     ├── .gitignore            
-    ├── captins.json             #images içindeki resimlerin dosya adları ve o resme karşılık gelen metinleri barındırıyor 
+    ├── dataset.json             #images içindeki resimlerin dosya adları ve o resme karşılık gelen metinleri barındırıyor 
     ├── LICENSE
     └── README.md
  Resimleri ve dataset dosyasını koyduysak modeli eğitebiliriz.
