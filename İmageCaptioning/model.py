@@ -30,16 +30,13 @@ class ClipCaptionModel(nn.Module):
         out = self.text_model(inputs_embeds=embedding_cat, labels=labels, attention_mask=mask)
         return out
 
-    def __init__(self, prefix_length: int, clip_length: Optional[int] = None, prefix_size: int = 512,
-                 num_layers: int = 8, mapping_type: MappingType = MappingType.MLP):
+    def __init__(self, prefix_length: int, prefix_size: int = 512):
         super(ClipCaptionModel, self).__init__()
         self.prefix_length = prefix_length
         self.text_model = AutoModelWithLMHead.from_pretrained("redrussianarmy/gpt2-turkish-cased")
        
         self.text_model_embedding_size = self.text_model.transformer.wte.weight.shape[1]
-        if mapping_type == MappingType.MLP:
-            self.clip_project = MLP((prefix_size, (self.text_model_embedding_size * prefix_length) // 2,
+       
+        self.clip_project = MLP((prefix_size, (self.text_model_embedding_size * prefix_length) // 2,
                                      self.text_model_embedding_size * prefix_length))
-        else:
-            self.clip_project = TransformerMapper(prefix_size, self.text_model_embedding_size, prefix_length,
-                                                                     clip_length, num_layers)
+        
