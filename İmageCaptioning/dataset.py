@@ -17,7 +17,7 @@ class dataset(Dataset):
         """
         self.max_seq_len=max_len
         
-        dataset=json.load(open("../../dataset.json"))#içinde resim dosyalarını ve metinleri bulundurmalı
+        dataset=json.load(open("../dataset.json"))#içinde resim dosyalarını ve metinleri bulundurmalı
         dataset=dataset["images"]
         self.captions=[]
         self.image_names=[]
@@ -52,7 +52,7 @@ class dataset(Dataset):
         return tokens,mask
     def __getitem__(self, i):
         # Unutma i. veri i. metin ama bazı resimler birden fazla metni var
-        img=Image.open(f"../input/flickr-image-dataset/flickr30k_images/flickr30k_images/{self.image_names[i]}.jpg")
+        img=Image.open(f"../images_data/flickr30k_images/flickr30k_images/{self.image_names[i]}.jpg")
         image = self.preprocess(img).unsqueeze(0).to("cpu") # paralel workerslar çalıştırmak için cpu gerekli
         
         tokenized=self.tokenizer(self.captions[i])
