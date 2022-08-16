@@ -1,7 +1,8 @@
 from transformers import AutoModel, AutoTokenizer,AutoModelWithLMHead
 import time
 from model import ClipCaptionModel
-from dataset import dataset
+from coco_dataset import dataset ## eğer datasetin coco se böyle kalsın flickr ise 
+#from flickr_dataset import dataset
 import clip
 from PIL import Image
 from utils import AvgMeter,get_lr
