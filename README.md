@@ -50,12 +50,23 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
  </table>
  
  # Modeli Eğitmek 
- Modeli eğitmek için öncelikle requirements.txt dosyasındaki kütüphanelerin kurulmuş olması gerekir. Bir de CLIP modelini yüklemeniz gerekiyor. 
- ```
+ ### 1. Projeyi Kendi Bilgisayarınıza Yükleyin
+  ```git clone enes3774/NeGoruyorsun ```
+ 
+ ### 2. Bağımlılıkları İndir
+ Modeli eğitmek için öncelikle requirements.txt dosyasındaki kütüphanelerin kurulmuş olması gerekir.
+  ```
+  pip install -r requirements.txt
+  ```
+  
+  Bir de CLIP kütüphanesini github sayfasından yüklemeniz gerekiyor.
+  ```
   pip install git+https://github.com/openai/CLIP.git
- ```
- Modeli eğitmek için kullanacağınız resimleri proje dosyasında "images_data/" klasorünün içine atın. İçinde image dosya adları ve onların Türkçe metinleri olan json formatında bir dosyayı "dataset.json" olarak proje dosyasına koyun.
-Dosya klasoru bu şekilde olmalı: 
+  ```
+ 
+ ### 3. Örnek Dataseti veya Kendi Datasetinizi İndirin
+Modeli eğitmek için resimlere ve resimlerin Türkçe metinleri olan bir json dosyasına ihtiyacınız var. Örnek olarak MSCOCO resimlerini [buradan](https://www.kaggle.com/datasets/aftaab/mscoco) indirin ve proje dosyasında "images_data/" klasorünün içine atın. Bu resimlerin Türkçe metinlerini barındıran json dosyasını da [buradan](https://github.com/giddyyupp/turkish-image-captioning/blob/master/MSCOCO/train/coco_train_captions_tr.json) indirip "dataset.json" olarak proje dosyasına koyun. Bu konuda daha fazla bilgiyi datasets klasorunde bulabilirsiniz.
+Dataseti hazırlayıp Dosya klasoru bu şekilde olmalı: 
 
     .
     ├── images                  # Github için kullanılan resimler burada 
@@ -68,9 +79,10 @@ Dosya klasoru bu şekilde olmalı:
     ├── requirements.txt
     └── README.md
  Kullandığınız dataset flickr ise train.py kodunda 4. satırı okuyun. 
- Resimleri ve dataset dosyasını koyduysak modeli eğitebiliriz.
  
+  ### 4. Modeli Eğitmek
  
+ Modeli eğitmek için ş
  ```
   python ImageCaptioning/train.py
  ```
