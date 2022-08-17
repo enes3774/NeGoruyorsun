@@ -65,6 +65,7 @@ Dosya klasoru bu şekilde olmalı:
     ├── .gitignore            
     ├── dataset.json             #images içindeki resimlerin dosya adları ve o resme karşılık gelen metinleri barındırıyor 
     ├── LICENSE
+    ├── requirements.txt
     └── README.md
  Kullandığınız dataset flickr ise train.py kodunda 4. satırı okuyun. 
  Resimleri ve dataset dosyasını koyduysak modeli eğitebiliriz.
