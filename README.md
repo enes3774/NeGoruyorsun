@@ -95,7 +95,7 @@ Dataseti hazırladıktan dosya klasoru bu şekilde olmalı:
  
  # Test Aşaması
  ### 1. Eğitilen Modeli Kaydetmek
- Eğittiğiniz modeli ImageCaptioning dosyası içinde "checkpoints/" klasorune "model_latest.pth" şeklinde koymanız gerekiyor(Modeli eğitirken her 6000 adımda bir ve epoch sonunda kaydediliyor. Train ederken model doğru yere kaydedilecektir.). Hazır bir model checkpoint [Kaggle sonuçlarında]() var(sadece 2 saat eğitildi). Ama buna gerek yok çünkü model çok hızlı bir şekilde(yaklaşık 2-3 saate çalışan bir model elde edebilirsiniz.) eğitebiliyor olmanız.
+ Eğittiğiniz modeli ImageCaptioning dosyası içinde "checkpoints/" klasorune "model_latest.pth" şeklinde koymanız gerekiyor(Modeli eğitirken her 6000 adımda bir ve epoch sonunda kaydediliyor. Train ederken model doğru yere kaydedilecektir.). Hazır bir model checkpoint paylaşmayacağım çünkü model çok hızlı bir şekilde(yaklaşık 1-2 saate çalışan bir model elde edebilirsiniz.) eğitebiliyor olmanız.
  ### 2. Modeli Test Etmek
  Modeli belirtlien dosyaya koyduktan sonra test kodunu çalıştırın. 
   ```
