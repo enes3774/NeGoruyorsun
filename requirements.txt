@@ -1,6 +1,6 @@
 torch==1.11.0
 transformers==4.20.1
-PIL==9.1.1
+Pillow==9.1.1
 tqdm==4.64.0
 json==2.0.9
 skimage==0.19.3
