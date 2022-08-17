@@ -51,7 +51,9 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
  
  # Modeli Eğitmek 
  ### 1. Projeyi Kendi Bilgisayarınıza Yükleyin
-  ```git clone enes3774/NeGoruyorsun ```
+  ```
+  git clone enes3774/NeGoruyorsun 
+  ```
  
  ### 2. Bağımlılıkları İndir
  Modeli eğitmek için öncelikle requirements.txt dosyasındaki kütüphanelerin kurulmuş olması gerekir.
@@ -65,8 +67,11 @@ Bu modeli kullanmış olmamın nedeni, modelin daha önceden 400 milyon fotoğra
   ```
  
  ### 3. Örnek Dataseti veya Kendi Datasetinizi İndirin
-Modeli eğitmek için resimlere ve resimlerin Türkçe metinleri olan bir json dosyasına ihtiyacınız var. Örnek olarak MSCOCO resimlerini [buradan](https://www.kaggle.com/datasets/aftaab/mscoco) indirin ve proje dosyasında "images_data/" klasorünün içine atın. Bu resimlerin Türkçe metinlerini barındıran json dosyasını da [buradan](https://github.com/giddyyupp/turkish-image-captioning/blob/master/MSCOCO/train/coco_train_captions_tr.json) indirip "dataset.json" olarak proje dosyasına koyun. Bu konuda daha fazla bilgiyi datasets klasorunde bulabilirsiniz.
-Dataseti hazırlayıp Dosya klasoru bu şekilde olmalı: 
+Modeli eğitmek için resimlere ve resimlerin Türkçe metinleri olan bir json dosyasına ihtiyacınız var. 
+- Örnek olarak MSCOCO resimlerini [buradan](https://www.kaggle.com/datasets/aftaab/mscoco) indirin ve proje dosyasında "images_data/" klasorü oluşturup içine atın. 
+- Bu resimlerin Türkçe metinlerini barındıran json dosyasını da [buradan](https://github.com/giddyyupp/turkish-image-captioning/blob/master/MSCOCO/train/coco_train_captions_tr.json) indirip "dataset.json" olarak proje dosyasına koyun. Faklı verisetleri hakkında daha fazla bilgiyi datasets klasorunde bulabilirsiniz.
+
+Dataseti hazırladıktan dosya klasoru bu şekilde olmalı: 
 
     .
     ├── images                  # Github için kullanılan resimler burada 
@@ -82,14 +87,16 @@ Dataseti hazırlayıp Dosya klasoru bu şekilde olmalı:
  
   ### 4. Modeli Eğitmek
  
- Modeli eğitmek için ş
+ Modeli eğitmek için  aşağıdaki kodu yazın.
  ```
   python ImageCaptioning/train.py
  ```
- Train dosyasındaki hiperparametreleri(epoch sayısı, batch_size, learning rate vb.) düzenleyip modeldeki sonuçları gözlemleyebilirsiniz. Modeli Tasvir Et ve Turkish MSCOCO verisetleriyle 1 epoch eğitmeniz bile yeterli olacaktır.
+ Train dosyasındaki hiperparametreleri(epoch sayısı, batch_size, learning rate vb.) düzenleyip modeldeki sonuçları gözlemleyebilirsiniz(şuanki hiperparametrelerde model doğru sonuç verecektir.). Modeli bu veriyle 1 epoch eğitmeniz bile yeterli olacaktır.
  
  # Test Aşaması
- Eğittiğiniz modeli ImageCaptioning dosyası içinde "checkpoints/" klasorune "model_latest.pth" şeklinde koymanız gerekiyor(Modeli eğitirken her 6000 adımda bir ve epoch sonunda kaydediliyor. Train ederken model doğru yere kaydedilecektir.). Hazır bir model checkpoint paylaşmayacağım bunun nedeni modeli çok hızlı şekilde(yaklaşık 2-3 saate çalışan bir model elde edebiliyorsunuz.) eğitebiliyor olmanız.
+ ### 1. Eğitilen Modeli Kaydetmek
+ Eğittiğiniz modeli ImageCaptioning dosyası içinde "checkpoints/" klasorune "model_latest.pth" şeklinde koymanız gerekiyor(Modeli eğitirken her 6000 adımda bir ve epoch sonunda kaydediliyor. Train ederken model doğru yere kaydedilecektir.). Hazır bir model checkpoint [Kaggle sonuçlarında]() var(sadece 2 saat eğitildi). Ama buna gerek yok çünkü model çok hızlı bir şekilde(yaklaşık 2-3 saate çalışan bir model elde edebilirsiniz.) eğitebiliyor olmanız.
+ ### 2. Modeli Test Etmek
  Modeli belirtlien dosyaya koyduktan sonra test kodunu çalıştırın. 
   ```
   python ImageCaptioning/test.py
