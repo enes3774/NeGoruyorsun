@@ -11,7 +11,7 @@ Bu proje bir resim alır ve bu resmi analiz edip size yazıyla tasvir eder. Mode
 
 Model Kaggle ortamında yaklaşık 10 saat eğitildi. Her bir epoch 3 saat sürdü yani yaklaşık 3 epoch eğitilidi.
 
-
+# Örnek
 https://user-images.githubusercontent.com/77508537/185377116-aaa2690e-6353-4684-9a59-dfea08501a05.mp4
 
 
