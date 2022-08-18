@@ -11,6 +11,8 @@ Bu proje bir resim alır ve bu resmi analiz edip size yazıyla tasvir eder. Mode
 
 Model Kaggle ortamında yaklaşık 10 saat eğitildi. Her bir epoch 3 saat sürdü yani yaklaşık 3 epoch eğitilidi.
 
+<video src='../main/images/demo_video.mp4'/>
+
 # Modelin Detayları
 Proje iki kısımdan oluşuyor, image encoder ve text decoder. İmage encoder, verilen resmi 512 uzunluğunda bir vektöre dönüştürür. 
 Bu vektör içinde resimdeki önemli detayları(eşyalar,onların renkleri vs.) barındırır. Oluşturulan bu vektör başka küçük bir model sayesinde text decoder'a verilmek için boyutu arttırılır.
