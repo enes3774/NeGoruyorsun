@@ -34,4 +34,4 @@ Flickr 30k yine ["Çeviri Veriyle Image Captioning Modeli Oluşturulabilir mi?"]
 
 Bu verisetlerini kullanabilmek için resimleri indirmiş olmanız gerekiyor. MSCOCO veriseti Kaggle'da var [link](https://www.kaggle.com/datasets/aftaab/mscoco). Aynı şekilde Flickr30k veriseti de Kaggle da var [link](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)). Tasvir Et verisetini kullanmak için de bu veriyi indirebilirsiniz.
 
-Modeli kullanmak için içinde fotoğraf urlleri ve metinler olan json dosyasını belirtilen klasore (ImageCaptioning/dataset.py kısmından değiştirebilirsiniz) koymak gerekir. Resimleri de images klasoru içinde toplamanız gerekiyor.
+Modeli kullanmak için içinde fotoğraf urlleri ve metinler olan json dosyasını belirtilen klasore (ImageCaptioning/dataset.py kısmından değiştirebilirsiniz) koymak gerekir. Resimleri de images_data klasoru içinde toplamanız gerekiyor.
