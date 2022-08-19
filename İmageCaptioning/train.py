@@ -9,6 +9,8 @@ from PIL import Image
 from utils import AvgMeter,get_lr
 import sys
 import torch
+import torch.nn
+from torch.nn import functional as nnf
 import os
 from torch.utils.data import  DataLoader
 clip_model_name="ViT-B/32"
