@@ -3,7 +3,7 @@ from torch.utils.data import Dataset
 from transformers import AutoModel, AutoTokenizer
 import clip
 import json
-
+import torch
 from torch.utils.data import Dataset
 from transformers import AutoModel, AutoTokenizer
 import clip
@@ -47,7 +47,7 @@ class dataset(Dataset):
         return tokens,mask
     def __getitem__(self, i):
         # Unutma i. veri i. metin ama i/number of captions per image 
-        img=Image.open(os.path.join("images_data/"+str(self.data[i//5]["file_path"][self.data[i//5]["file_path"].index("images")+7:])))
+        img=Image.open(os.path.join("images_data/"+str(self.data[i//5]["file_path"][self.data[i//5]["file_path"].index("train2014")+10:])))
         image = self.preprocess(img).unsqueeze(0).to("cpu")
         #with torch.no_grad():
         #    image_features = self.clip_model.encode_image(image)
