@@ -11,7 +11,7 @@ Modeli 3 parçaya ayırabiliriz:
 <img src="../../main/images/clip_image_encoder.jpg">
 İmage  Encoder modelleri, verdiğiniz bir resmi N uzunluğunda bir vektöre(image embeddings) dönüştüren modellerdir. Bu elde ettiğiniz vektör, resim hakkında önemli bilgileri(cisimler, renkleri, sayıları vs.) tutar.
 
-Bu proje için kullandığım İmage Encoder modeli, OpenAI'ın yayınlamış olduğu CLIP İmage Encoder modeli. Bu model yaklaşık 400 milyon fotoğraf ile eğitildi. Yani bir resim için neyin önemli oldğunu neyin önemsiz olduğunu çok iyi bilen bir model. Model bu kadar fazla veri ile eğitildiği için bu modeli eğitmedim. Yani proje boyunca bu model hep dondurulmuştu. Bu da diğer projenin parçalarının(Projection Head ve GPT-2) daha hızlı ve doğru eğitilmesini sağladı.
+Bu proje için kullandığım İmage Encoder modeli, OpenAI'ın yayınlamış olduğu CLIP İmage Encoder modeli. Bu model yaklaşık 400 milyon fotoğraf ile eğitildi. Yani bir resim için neyin önemli olduğunu neyin önemsiz olduğunu çok iyi bilen bir model. Model bu kadar fazla veri ile eğitildiği için bu modeli eğitmedim. Yani proje boyunca bu model hep dondurulmuştu. Bu da diğer projenin parçalarının(Projection Head ve GPT-2) daha hızlı ve doğru eğitilmesini sağladı.
 
 ## Projection Head
 Bu model, İmage Encoder ile GPT-2 arasında köprü görevi görüyor. İmage Encoder 512 uzunluğunda bir vektör çıkarıyor, GPT-2 ise 7680(10x768) boyutunda bir vektör alıyor. Bu yüzden iki modeli birbirine bağlayacak başka bir model kullandım. Bu model 2 tane dense layer'ından oluşuyor (512 -> 3840 -> 7680). 
