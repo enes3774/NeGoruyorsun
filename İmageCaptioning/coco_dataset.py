@@ -9,6 +9,7 @@ from transformers import AutoModel, AutoTokenizer
 import clip
 import json
 import os
+import PIL
 from PIL import Image
 
 class dataset(Dataset):
