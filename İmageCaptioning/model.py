@@ -1,5 +1,7 @@
 from transformers import AutoModel, AutoTokenizer,AutoModelWithLMHead
 from typing import Tuple, Optional, Union
+import torch
+from torch import nn
 class MLP(nn.Module):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
