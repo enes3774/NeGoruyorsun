@@ -82,7 +82,7 @@ Dataseti hazırladıktan dosya klasoru bu şekilde olmalı:
     .
     ├── images                  # Github için kullanılan resimler burada 
     ├── datasets                # verisetleri ve kullanımı hakkında 
-    ├── ImageCaptioning         # Projenin modeli bu dosyada bulunuyor
+    ├── İmageCaptioning         # Projenin modeli bu dosyada bulunuyor
     ├── images_data                  #içerisinde kullandığın verisetinin fotoğrafları olmalı
     ├── .gitignore            
     ├── dataset.json             #images içindeki resimlerin dosya adları ve o resme karşılık gelen metinleri barındırıyor 
@@ -95,7 +95,7 @@ Dataseti hazırladıktan dosya klasoru bu şekilde olmalı:
  
  Modeli eğitmek için  aşağıdaki kodu yazın.
  ```
-  python ImageCaptioning/train.py
+  python İmageCaptioning/train.py
  ```
  Train dosyasındaki hiperparametreleri(epoch sayısı, batch_size, learning rate vb.) düzenleyip modeldeki sonuçları gözlemleyebilirsiniz(şuanki hiperparametrelerde model doğru sonuç verecektir.). Modeli bu veriyle 1 epoch eğitmeniz bile yeterli olacaktır.
  
@@ -105,7 +105,7 @@ Dataseti hazırladıktan dosya klasoru bu şekilde olmalı:
  ### 2. Modeli Test Etmek
  Modeli belirtlien dosyaya koyduktan sonra test kodunu çalıştırın. 
   ```
-  python ImageCaptioning/test.py
+  python İmageCaptioning/test.py
  ```
 Test kodundaki resmi değiştirip farklı resimler için modeli test edebilirisiniz.
 ## 📓 Kaggle
