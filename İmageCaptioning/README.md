@@ -22,4 +22,5 @@ Bu model, İmage Encoder ile GPT-2 arasında köprü görevi görüyor. İmage E
 GPT-2, OpenAI tarafından oluşturulmuş metin tabanlı bir transformer modeldir. Model input olarak bir metin alıp output olarak bir metin üretir. Bu projeyi kullanırken modelin Türkçe metin yapısına daha hızlı adapte olabilmesi için daha önceden
 Oscar Turkish Corpora ile eğitilmiş bir GPT-2 modeli kullanıldı.
 
-Model mimarisi hakkında fikierler https://arxiv.org/abs/2111.09734 makalesi referans lınarak oluşturuldu.
+### Referans
+Model mimarisi hakkında fikierler https://arxiv.org/abs/2111.09734 makalesi referans alınarak oluşturuldu.
