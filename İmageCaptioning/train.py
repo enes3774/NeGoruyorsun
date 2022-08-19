@@ -1,7 +1,8 @@
 from transformers import AutoModel, AutoTokenizer,AutoModelWithLMHead, AdamW,get_linear_schedule_with_warmup
 import time
 from model import ClipCaptionModel
-from coco_dataset import dataset ## eğer datasetin coco se böyle kalsın flickr ise 
+
+from coco_dataset import dataset ## eğer datasetin coco se böyle kalsın flickr ise  aşağıdaki kodu aç bu kodu kapat
 #from flickr_dataset import dataset
 import clip
 from PIL import Image
