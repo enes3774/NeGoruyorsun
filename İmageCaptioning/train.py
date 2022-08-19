@@ -37,7 +37,7 @@ ai_model = ClipCaptionModel(prefix_length, prefix_size=prefix_dim)
 ai_model = ai_model.to(device)
 ai_model.train()
 optimizer = AdamW(ai_model.parameters(), lr=lr)
-train_dataloader = DataLoader(dataset,num_workers=8 ,batch_size=batch_size,shuffle=True, drop_last=True)
+train_dataloader = DataLoader(dataset ,batch_size=batch_size,shuffle=True, drop_last=True)
 scheduler = get_linear_schedule_with_warmup(
         optimizer, num_warmup_steps=warmup_steps, num_training_steps=epochs * len(train_dataloader)
     )
