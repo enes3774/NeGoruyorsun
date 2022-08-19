@@ -118,6 +118,7 @@ Bu model ile videoları tasvir etmek de mümkün. Bununla alakalı   ```PredictV
 
 Bunu kullanarak tam zamanlı görüntü tasviri yapabilirsiniz.
 ### Örnek
+!!!LÜTFEN SESİ AÇIN
 
 
 
