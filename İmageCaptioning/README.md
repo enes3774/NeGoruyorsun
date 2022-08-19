@@ -23,4 +23,4 @@ GPT-2, OpenAI tarafından oluşturulmuş metin tabanlı bir transformer modeldir
 Oscar Turkish Corpora ile eğitilmiş bir GPT-2 modeli kullanıldı.
 
 ### Referans
-Model mimarisi hakkında fikierler https://arxiv.org/abs/2111.09734 makalesi referans alınarak oluşturuldu.
+Model mimarisi hakkında fikirler https://arxiv.org/abs/2111.09734 makalesi referans alınarak oluşturuldu.
