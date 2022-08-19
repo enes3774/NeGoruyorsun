@@ -120,6 +120,17 @@ Bunu kullanarak tam zamanlı görüntü tasviri yapabilirsiniz.
 ### Örnek
 
 
+
+
+
+
+https://user-images.githubusercontent.com/77508537/185651778-a2a6df5e-5e48-403b-9446-7c94b232a52d.mp4
+
+
+
+
+
+
 NOT: Oluşturulan cümleler tamamen eğittiğim yapay zeka tarafından elde edildi. Projenin işlevselliğini ortaya çıkarmak için bir video düzenleyicisinden seslendirme ve altyazı eklenmiştir. Bunu Google Text to Speech gibi bir API kullanarak otomatik şekilde yapmak mümkün.
 
 ## Risk Puanı Hesaplanması
@@ -128,4 +139,4 @@ Bunu yaparkenki aşamaları:
 1. Cümleler kelimelere ayrıldı ve her bir kelimenin kökü alındı
 2. Alınan kelime köklerinin, daha önceden verilen tehlikeli kelimelerle olan benzerliği hesaplandı. Bu sayede o kelimenin ne kadar tehlikeli olduğu öğrenildi.
 3. Elde edilen kelimelerin tehlike puanları toplanıp o cümlenin tehlike skoru hesaplandı.
-### Örnek
+
