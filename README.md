@@ -111,3 +111,21 @@ Test kodundaki resmi değiştirip farklı resimler için modeli test edebilirisi
 ## 📓 Kaggle
 
 * Modeli [Kaggle](https://www.kaggle.com/code/eneskulak/ne-goruyorsun) ortamında yaklaşık 2 saatte eğitebilirsiniz. İçerisinde eğittiğiniz modeli kullanmak için beam_search ve greedy olmak üzere 2 algoritma bulunuyor.
+
+## Videoları Tasvir Etmek
+
+Bu model ile videoları tasvir etmek de mümkün. Bununla alakalı   ```PredictVideoCaption.py``` kodunu paylaştım. Bunu yaparken verdiğiniz videodan 5 saniyede bir resim alınıp modelden geçiriliyor. Elde ettiğiniz metinler toplanıyor ve bu sizin videoda ne yaptığınızın özeti oluyor. Burada cümleler birbirine benzeyebilir. Bunu önlemek için birbirine çok benzeyen cümleleri atabilirsiniz.
+
+Bunu kullanarak tam zamanlı görüntü tasviri yapabilirsiniz.
+### Örnek
+
+
+NOT: Oluşturulan cümleler tamamen eğittiğim yapay zeka tarafından elde edildi. Projenin işlevselliğini ortaya çıkarmak için bir video düzenleyicisinden seslendirme ve altyazı eklenmiştir. Bunu Google Text to Speech gibi bir API kullanarak otomatik şekilde yapmak mümkün.
+
+## Risk Puanı Hesaplanması
+Elde edilen cümleler üzerinde kullanıcıyı tehdit eden durumlar tespit edilmesi ve kullanıcıyı uyarmak için risk puanı hesaplanmıştır. Bununla alakalı ```CalculateTestScore.ipynb``` kodu hazırlandı. Yaptığı şey, verdiğiniz metni almak ve bu cümlenin bir görme engelli için ne kadar tehlikeli olduğunu döndürmek.
+Bunu yaparkenki aşamaları:
+1. Cümleler kelimelere ayrıldı ve her bir kelimenin kökü alındı
+2. Alınan kelime köklerinin, daha önceden verilen tehlikeli kelimelerle olan benzerliği hesaplandı. Bu sayede o kelimenin ne kadar tehlikeli olduğu öğrenildi.
+3. Elde edilen kelimelerin tehlike puanları toplanıp o cümlenin tehlike skoru hesaplandı.
+### Örnek
