@@ -10,7 +10,7 @@ Görme engellilerin en büyük problemi dış çevreyi tanımlamaktır. Bu sorun
 Bu proje bir resim alır ve bu resmi analiz edip size yazıyla tasvir eder. Model eğitilirken kendi oluşturduğum wikipedia resim-metin veriseti, Turkish MSCOCO ve Tasvir Et verisetleri kullanılmıştır. Datasets kısmından daha fazla ayrıntıya bakabilirsiniz.
 
 Model Kaggle ortamında yaklaşık 10 saat eğitildi. Her bir epoch 3 saat sürdü yani yaklaşık 3 epoch eğitilidi.
-Teknofest Sunum Linki:https://docs.google.com/presentation/d/1U-gMP8bJkzaW_pu14nTu5CHa3S7SChhUdHkBMDg0tWQ/edit?usp=sharing
+Teknofest Sunum Linki:https://docs.google.com/presentation/d/1U-gMP8bJkzaW_pu14nTu5CHa3S7SChhUdHkBMDg0tWQ
 # Örnek
 https://user-images.githubusercontent.com/77508537/185377116-aaa2690e-6353-4684-9a59-dfea08501a05.mp4
 
