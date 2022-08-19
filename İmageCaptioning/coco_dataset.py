@@ -12,20 +12,13 @@ import os
 from PIL import Image
 
 class dataset(Dataset):
-    """
-    A PyTorch Dataset class to be used in a PyTorch DataLoader to create batches.
-    """
+
 
     def __init__(self,max_len,tokenizer,preprocess,prefix_length=10):
-        """
-        :param data_folder: folder where data files are stored
-        :param data_name: base name of processed datasets
-        :param split: split, one of 'TRAIN', 'VAL', or 'TEST'
-        :param transform: image transform pipeline
-        """
+
         self.max_seq_len=max_len
         
-        with open('../dataset.json') as f:
+        with open('dataset.json') as f:
               self.data = json.load(f)
        
     
@@ -35,7 +28,7 @@ class dataset(Dataset):
         self.tokenizer=tokenizer
         self.preprocess=preprocess
 
-        # Total number of datapoints
+      
         self.dataset_size = len(self.data)*5
     def pad_tokens(self, tokens):
         padding = self.max_seq_len - tokens.shape[0]
@@ -45,7 +38,7 @@ class dataset(Dataset):
         elif padding < 0:
             tokens = tokens[:self.max_seq_len]
             
-        mask = tokens.ge(0)  # mask is zero where we out of sequence
+        mask = tokens.ge(0)  
         tokens[~mask] = 0
         mask = mask.float()
         mask = torch.cat((torch.ones(self.prefix_length), mask), dim=0)  # adding prefix mask
