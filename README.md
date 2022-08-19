@@ -141,3 +141,12 @@ Bunu yaparkenki aşamaları:
 2. Alınan kelime köklerinin, daha önceden verilen tehlikeli kelimelerle olan benzerliği hesaplandı. Bu sayede o kelimenin ne kadar tehlikeli olduğu öğrenildi.
 3. Elde edilen kelimelerin tehlike puanları toplanıp o cümlenin tehlike skoru hesaplandı.
 
+Gelecek Hedefler
+1. Veriyi Genişletmek
+Modele günlük hayatta olmayan veriler(animasyonlar, hayali figürler, sanatlar) vererek modelin her konuda fikir sahibi olmasını sağlamak.
+
+2. Modelin videoları daha iyi anlaması için frame değil birden çok frame’i aynı anda alıp değerlendiren bir video encoder model kullanılması.
+
+3. Projenin mobil app halinde kullanılabilir olması.
+
+4. Giyilebilir bir teknoloji ile görme engelliler için projeyi hayata geçirmek. Eğer model sonuçları arttırıl
