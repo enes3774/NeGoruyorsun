@@ -10,15 +10,10 @@ class dataset(Dataset):
    
 
     def __init__(self,max_len,tokenizer,preprocess,prefix_length=10):
-        """
-        :param max_len: alınan metinler en çok kaç uzunluğunda olsun
-        :param tokenizer: metileri tokenleştirmek için tokenizer
-        :param preprocess: clip modele resimler verilmesi için ön hazırlık
-        :param prefix_length: gpt modeline verilecek embeddingleşmiş kelime uzunluğu
-        """
+
         self.max_seq_len=max_len
         
-        dataset=json.load(open("../dataset.json"))#içinde resim dosyalarını ve metinleri bulundurmalı
+        dataset=json.load(open("dataset.json"))#içinde resim dosyalarını ve metinleri bulundurmalı
         dataset=dataset["images"]
         self.captions=[]
         self.image_names=[]
