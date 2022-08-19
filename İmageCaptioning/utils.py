@@ -1,3 +1,5 @@
+import torch
+from tqdm import trange
 def generate2(
         model,
         tokenizer,
