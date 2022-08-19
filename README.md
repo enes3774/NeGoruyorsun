@@ -1,7 +1,6 @@
 # Ne Görüyorsun?
 Ne Görüyorsun, çeşitli resimleri metinsel olarak tasvir eden GPT2 ve CLIP modellerini kullanan Türkçe Doğal Dil İşleme projesi.
 
-Proje Takım Adı: TEXT-GEN
 
 ![image](https://user-images.githubusercontent.com/77508537/184640351-05e43f6d-ea4b-459b-a4be-be21da65e717.png)
 
