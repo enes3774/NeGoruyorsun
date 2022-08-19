@@ -141,7 +141,7 @@ Bunu yaparkenki aşamaları:
 2. Alınan kelime köklerinin, daha önceden verilen tehlikeli kelimelerle olan benzerliği hesaplandı. Bu sayede o kelimenin ne kadar tehlikeli olduğu öğrenildi.
 3. Elde edilen kelimelerin tehlike puanları toplanıp o cümlenin tehlike skoru hesaplandı.
 
-Gelecek Hedefler
+## Gelecek Hedefler
 1. Veriyi Genişletmek
 Modele günlük hayatta olmayan veriler(animasyonlar, hayali figürler, sanatlar) vererek modelin her konuda fikir sahibi olmasını sağlamak.
 
