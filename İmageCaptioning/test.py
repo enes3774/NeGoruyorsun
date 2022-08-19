@@ -3,6 +3,7 @@ import PIL
 import clip
 import skimage.io as io
 from utils import generate2,generate_beam
+import torch
 from torchvision import transforms
 prefix_length=10
 prefix_dim=512
