@@ -1,6 +1,7 @@
 # İmage Captioning Modeli
 Bu model input olarak resim alan ve output olarak resim verir.
 Modeli oluştururken pretrained image encoder ve daha önceden [Türkçe verilerle eğitilmiş bir GPT-2 modeli](https://huggingface.co/redrussianarmy/gpt2-turkish-cased) kullandım.
+
 ![image](https://user-images.githubusercontent.com/77508537/184653010-23384f2f-e8aa-4afc-a6c2-90103a8ba3d8.png)
 Modeli 3 parçaya ayırabiliriz:
 - İmage Encoder
@@ -21,3 +22,4 @@ Bu model, İmage Encoder ile GPT-2 arasında köprü görevi görüyor. İmage E
 GPT-2, OpenAI tarafından oluşturulmuş metin tabanlı bir transformer modeldir. Model input olarak bir metin alıp output olarak bir metin üretir. Bu projeyi kullanırken modelin Türkçe metin yapısına daha hızlı adapte olabilmesi için daha önceden
 Oscar Turkish Corpora ile eğitilmiş bir GPT-2 modeli kullanıldı.
 
+Model mimarisi hakkında fikierler https://arxiv.org/abs/2111.09734 makalesi referans lınarak oluşturuldu.
